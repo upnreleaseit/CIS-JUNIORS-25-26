@@ -1,0 +1,68 @@
+/* TODO: Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* TODO: Style the nav element */
+nav {
+    background-color: rgb(215, 65, 65);
+    padding: 1rem;
+}
+
+/* TODO: Make nav-container a flex container */
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* TODO: Style the logo */
+.logo {
+    
+    /* Make font larger */
+    /* Make font bold */
+}
+
+/* TODO: Remove bullet points from nav-menu */
+.nav-menu {
+   list-style: none;
+}
+
+/* TODO: Make nav-menu a flex container */
+.nav-menu {
+    /* Use display: flex */
+    /* Choose how to space items */
+}
+
+/* TODO: Style the nav links */
+.nav-menu a {
+    /* Remove underline */
+    /* Set color */
+    /* Add padding */
+    /* Display as block */
+    /* Add any other styling */
+}
+
+/* TODO: Add hover effect to links */
+.nav-menu a:hover {
+    /* Change background color or text color */
+}
+
+/* Main content styling (already done for you) */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
