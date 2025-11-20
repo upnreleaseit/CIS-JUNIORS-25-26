@@ -1,0 +1,175 @@
+/* Reset and Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6; 
+}
+
+/*----------
+Header Styles
+*/
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.1;
+    opacity: 0.9;
+}
+
+/*-------------------------------
+Mobile Styles ( DEAFAULT - NO MEDIA QUERY)
+SIngle collumn layout for phones
+=============================*/
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Card lifts on hover witb stronger shadow */
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* object-fit : cover; ensures fill the space without distortion*/
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px; 
+    font-sizes: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*=============================
+footer styles
+==============================*/
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+/*==================================
+Tablet Styles
+2 column layout for styles (768px and wider)
+*/
+
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr; /* tablet */
+        gap: 25px;
+        padding: 0 20px;
+
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .card button {
+        width: auto; /* button no longer full width */
+        padding: 12px 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 0;
+
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
+
+/*=========================
+RESPONSIVE TYPOGRAPHY
+Adjust font sizes for better readability
+==========================*/
+
+
+
+/*===================================
+PRINT STYLE
+=====================================*/
+
+
+
+
+
+    
